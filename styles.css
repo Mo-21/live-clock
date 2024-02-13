@@ -41,6 +41,69 @@ body {
   font-size: 5rem;
 }
 
+.wrap-original-transform {
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+
+.original-transform {
+  transform: rotateX(9deg) rotateY(35deg) rotateZ(12deg) translateY(48px)
+    scaleZ(1.7);
+  width: 600px;
+  height: 600px;
+  position: relative;
+  top: 100px;
+  transform-style: preserve-3d;
+  animation: rotateCube 60s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.front {
+  transform: translateZ(500px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(500px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(500px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(500px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(500px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(500px);
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateX(9deg) rotateY(35deg) rotateZ(12deg) scaleZ(1.7);
+  }
+  to {
+    transform: rotateX(9deg) rotateY(395deg) rotateZ(12deg) scaleZ(1.7);
+  }
+}
+
+.red-circle {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  top: 60px;
+  left: 650px;
+}
+
 .clock {
   position: relative;
   width: 400px;
