@@ -1,5 +1,11 @@
 const digitalClock = document.querySelector(".digital-clock");
 const date = document.querySelector(".date");
+const button = document.querySelector("button");
+const body = document.querySelector("body");
+
+button.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
 
 function updateClock(time) {
   const timeNow = time.split(" ")[0].split(":");
