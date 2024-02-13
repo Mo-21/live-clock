@@ -1,10 +1,11 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto-Thin";
   src: url("./assets/fonts/Roboto-Thin.ttf");
 }
 
-body {
-  font-family: "Roboto";
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("./assets/fonts/Roboto-Light.ttf");
 }
 
 .container {
@@ -17,9 +18,12 @@ body {
   align-items: center;
 }
 
-.clock {
+.digital-clock {
+  font-family: "Roboto-Thin";
+  font-size: 8rem;
 }
 
-.digital-clock {
+.date {
+  font-family: "Roboto-Light";
   font-size: 5rem;
 }
