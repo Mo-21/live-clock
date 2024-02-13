@@ -2,6 +2,8 @@
 
 This project is a simple clock built with HTML, CSS, and JavaScript. It displays the current time in both analog and digital formats, and allows you to switch between light and dark themes.
 
+[Live Preview](https://mo-21.github.io/live-clock/)
+
 ## Features
 
 - Analog Clock: The analog clock has hour, minute, and second hands that move in real time.
